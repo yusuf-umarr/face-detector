@@ -1,0 +1,32 @@
+Face Detector
+
+A computer vision project using OpenCV to detect faces in images and videos.
+
+Dependencies:
+
+- OpenCV (cv2)
+- Pre-trained face detection data (haarcascade_frontalface_default.xml)
+
+Usage:
+
+1. Install OpenCV and import the necessary dependencies.
+2. Place the haarcascade_frontalface_default.xml file in the same directory as the script.
+3. Run the script using Python (e.g., python (link unavailable)).
+4. The script will detect faces in the input image and video stream from the webcam.
+
+Input Files:
+
+- RDJ.jpeg (image file for testing)
+
+Output:
+
+- Detected faces are highlighted in the output video stream.
+
+Key Bindings:
+
+- Press 'Q' or 'q' to quit the program.
+
+Note:
+
+- Adjust the face detection parameters as needed for optimal performance.
+- The script uses a pre-trained face detection model, but you can train your own model for better accuracy.

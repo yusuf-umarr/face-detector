@@ -14,8 +14,6 @@ webcam = cv2.VideoCapture(0) #0 mean the default camera
 while True:
     successful_frame_read, frame = webcam.read()
 
-
-
 #convert img to greyscale
     grayscaled_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
@@ -23,6 +21,7 @@ while True:
 #detect faces
     face_coordinates = trained_face_data.detectMultiScale(grayscaled_img)
 
+# draw a rectangle 
     for (x, y, w, h) in face_coordinates:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 5)
 
